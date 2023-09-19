@@ -1,0 +1,15 @@
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\bin\Debug\net7.0\Repository.Abstractions.deps.json
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\bin\Debug\net7.0\Repository.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\bin\Debug\net7.0\Repository.Abstractions.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\bin\Debug\net7.0\Domain.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\bin\Debug\net7.0\Domain.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.csproj.AssemblyReference.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.AssemblyInfoInputs.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.AssemblyInfo.cs
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.csproj.CopyComplete
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\refint\Repository.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\Repository.Abstractions.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Repository.Abstractions\obj\Debug\net7.0\ref\Repository.Abstractions.dll

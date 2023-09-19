@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "IHiOuxetGm5CGYbT5o8fm6UrndGabRfSZJWhFXYcYIGIP0y0o56XIawiYy7VjZTCRiIIloIQX7hUidR05qvYEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Contracts\\Contracts.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.0.8:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
