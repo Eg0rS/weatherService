@@ -1,4 +1,6 @@
-﻿namespace Domain.Exceptions;
+﻿using System;
+
+namespace Domain.Exceptions;
 
 public class GeoPointNotFoundException: NotFoundException
 {

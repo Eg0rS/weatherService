@@ -5,4 +5,5 @@ public interface IRepositoryManager
     IGeoPointsRepository GeoPointsRepository { get; }
     IUserRepository UserRepository { get; }
     IUnitOfWork UnitOfWork { get; }
+    IWeatherForecastRepository WeatherForecastForecastRepository { get; }
 }

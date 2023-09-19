@@ -1,4 +1,6 @@
-﻿namespace Repository.Abstractions;
+﻿using System.Threading.Tasks;
+
+namespace Repository.Abstractions;
 
 public interface IUnitOfWork
 {

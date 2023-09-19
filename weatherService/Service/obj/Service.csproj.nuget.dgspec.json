@@ -219,6 +219,9 @@
             "projectReferences": {
               "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Contracts\\Contracts.csproj": {
                 "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Domain\\Domain.csproj"
               }
             }
           }

@@ -1,4 +1,8 @@
-﻿using Contracts;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Contracts;
 using Domain.Entities;
 using Domain.Exceptions;
 using Mapster;
@@ -10,7 +14,9 @@ namespace Service;
 public class GeoPointService : IGeoPointService
 {
     private readonly IRepositoryManager _repositoryManager;
-    public delegate void GeoPointHandler(GeoPointService sender, GeoPointDto e);
+
+    public delegate void GeoPointHandler(GeoPointService sender, GeoPoint e);
+
     public event IGeoPointService.GeoPointHandler? Notify;
     public GeoPointService(IRepositoryManager repositoryManager) => _repositoryManager = repositoryManager;
 
@@ -18,7 +24,13 @@ public class GeoPointService : IGeoPointService
     {
         var points = await _repositoryManager.GeoPointsRepository.GetAllByUserIdAsync(userId);
 
-        var pointsDto = points.Adapt<IEnumerable<GeoPointDto>>();
+        var pointsDto = await Task.WhenAll(points.Select(async point =>
+        {
+            var forecast = await GetWeatherForecastAsync(point);
+            var pointDto = point.Adapt<GeoPointDto>();
+            pointDto.WeatherForecast = forecast;
+            return pointDto;
+        }));
 
         return pointsDto;
     }
@@ -45,6 +57,7 @@ public class GeoPointService : IGeoPointService
         }
 
         var geoPointDto = geoPoint.Adapt<GeoPointDto>();
+        geoPointDto.WeatherForecast = await GetWeatherForecastAsync(geoPoint);
 
         return geoPointDto;
     }
@@ -65,8 +78,8 @@ public class GeoPointService : IGeoPointService
         _repositoryManager.GeoPointsRepository.Insert(geoPoint);
 
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
-        
-        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
+
+        Notify?.Invoke(this, geoPoint);
 
         return geoPoint.Adapt<GeoPointDto>();
     }
@@ -93,9 +106,9 @@ public class GeoPointService : IGeoPointService
         }
 
         _repositoryManager.GeoPointsRepository.Remove(geoPoint);
-        
-        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
-        
+
+        Notify?.Invoke(this, geoPoint);
+
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
     }
 
@@ -110,9 +123,16 @@ public class GeoPointService : IGeoPointService
         geoPoint.Latitude = geoPointForUpdateDto.Latitude;
         geoPoint.Longitude = geoPointForUpdateDto.Longitude;
         geoPoint.PointType = geoPointForUpdateDto.PointType;
-        
-        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
-        
+
+        Notify?.Invoke(this, geoPoint);
+
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
+    }
+
+    private async Task<WeatherForecastDto> GetWeatherForecastAsync(GeoPoint geoPoint)
+    {
+        var weatherForecast = await _repositoryManager.WeatherForecastForecastRepository.GetByGeoPointIdAsync(geoPoint);
+        var weatherForecastDto = weatherForecast.Adapt<WeatherForecastDto>();
+        return weatherForecastDto;
     }
 }

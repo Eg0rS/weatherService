@@ -16,6 +16,7 @@ func NewServer(logger *zap.SugaredLogger, settings config.Settings, weatherServi
 	router := mux.NewRouter()
 
 	router.HandleFunc("/ping", handler.Ping(logger)).Methods(http.MethodGet)
+	router.HandleFunc("/weather", handler.Weather(logger, weatherService)).Methods(http.MethodGet)
 
 	return &http.Server{
 		Addr: fmt.Sprintf(":%d", settings.Port),

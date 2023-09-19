@@ -1,5 +1,4 @@
-﻿using Common;
-using Contracts;
+﻿using Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Service.Abstractions;
@@ -40,7 +39,7 @@ public class GeoPointController : ControllerBase
     {
         _serviceManager.GeoPointService.Notify += (sender, e) =>
         {
-            _logger.Log(LogLevel.Information, $"GeoPoint {e.ToJson()} was craeted");
+            _logger.Log(LogLevel.Information, $"GeoPoint {e} was craeted");
             _serviceManager.GeoPointService.Notify -= (_, _) => { };
         };
         var response = await _serviceManager.GeoPointService.CreateAsync(userId, geoPointForCreationDto);
@@ -53,7 +52,7 @@ public class GeoPointController : ControllerBase
     {
         _serviceManager.GeoPointService.Notify += (sender, e) =>
         {
-            _logger.Log(LogLevel.Information, $"GeoPoint {e.ToJson()} was deleted");
+            _logger.Log(LogLevel.Information, $"GeoPoint {e} was deleted");
             _serviceManager.GeoPointService.Notify -= (_, _) => { };
         };
         await _serviceManager.GeoPointService.DeleteAsync(userId, geoPointId);
@@ -66,7 +65,7 @@ public class GeoPointController : ControllerBase
     {
         _serviceManager.GeoPointService.Notify += (sender, e) =>
         {
-            _logger.Log(LogLevel.Information, $"GeoPoint {e.ToJson()} was updated");
+            _logger.Log(LogLevel.Information, $"GeoPoint {e} was updated");
             _serviceManager.GeoPointService.Notify -= (_, _) => { };
         };
         await _serviceManager.GeoPointService.UpdateAsync(userId, geoPointId, geoPointForUpdateDto);

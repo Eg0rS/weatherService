@@ -1,10 +1,14 @@
-﻿using Contracts;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Contracts;
+using Domain.Entities;
 
 namespace Service.Abstractions;
 
 public interface IGeoPointService
 {
-    public delegate void GeoPointHandler(IGeoPointService sender, GeoPointDto e);
+    public delegate void GeoPointHandler(IGeoPointService sender, GeoPoint e);
     public event GeoPointHandler? Notify;
     Task<IEnumerable<GeoPointDto>> GetAllByUserIdAsync(Guid userId);
 
