@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Domain.Exeptions;
+using Domain.Exceptions;
 
 namespace Api.Middleware;
 

@@ -10,19 +10,19 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
     {
         builder.ToTable(nameof(User));
 
-        builder.HasKey(owner => owner.Id);
+        builder.HasKey(user => user.Id);
 
-        builder.Property(account => account.Id).ValueGeneratedOnAdd();
+        builder.Property(user => user.Id).ValueGeneratedOnAdd();
 
-        builder.Property(owner => owner.Name).HasMaxLength(60);
+        builder.Property(user => user.Name).HasMaxLength(60);
 
-        builder.Property(owner => owner.DateOfBirth).IsRequired();
+        builder.Property(user => user.DateOfBirth).IsRequired();
 
-        builder.Property(owner => owner.Address).HasMaxLength(100);
+        builder.Property(user => user.Address).HasMaxLength(100);
 
-        builder.HasMany(owner => owner.GeoPoints)
+        builder.HasMany(user => user.GeoPoints)
             .WithOne()
-            .HasForeignKey(account => account.UserId)
+            .HasForeignKey(point => point.UserId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }

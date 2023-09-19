@@ -506,6 +506,16 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -528,6 +538,19 @@
         },
         "runtime": {
           "bin/placeholder/Persistence.dll": {}
+        }
+      },
+      "Presentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Service.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Presentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Presentation.dll": {}
         }
       },
       "Repository/1.0.0": {
@@ -555,6 +578,19 @@
         },
         "runtime": {
           "bin/placeholder/Repository.Abstractions.dll": {}
+        }
+      },
+      "Service.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.Abstractions.dll": {}
         }
       }
     }
@@ -1516,6 +1552,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -1526,6 +1567,11 @@
       "path": "../Persistence/Persistence.csproj",
       "msbuildProject": "../Persistence/Persistence.csproj"
     },
+    "Presentation/1.0.0": {
+      "type": "project",
+      "path": "../Presentation/Presentation.csproj",
+      "msbuildProject": "../Presentation/Presentation.csproj"
+    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -1535,6 +1581,11 @@
       "type": "project",
       "path": "../Repository.Abstractions/Repository.Abstractions.csproj",
       "msbuildProject": "../Repository.Abstractions/Repository.Abstractions.csproj"
+    },
+    "Service.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Service.Abstractions/Service.Abstractions.csproj",
+      "msbuildProject": "../Service.Abstractions/Service.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1542,6 +1593,7 @@
       "Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
+      "Presentation >= 1.0.0",
       "Repository >= 1.0.0",
       "Repository.Abstractions >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -1582,6 +1634,9 @@
           "projectReferences": {
             "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Presentation\\Presentation.csproj": {
+              "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Presentation\\Presentation.csproj"
             },
             "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Repository.Abstractions\\Repository.Abstractions.csproj": {
               "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Repository.Abstractions\\Repository.Abstractions.csproj"

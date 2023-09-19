@@ -10,15 +10,15 @@ internal sealed class GeoPointConfiguration : IEntityTypeConfiguration<GeoPoint>
     {
         builder.ToTable(nameof(GeoPoint));
         
-        builder.HasKey(account => account.Id);
+        builder.HasKey(point => point.Id);
         
-        builder.Property(account => account.Id).ValueGeneratedOnAdd();
+        builder.Property(point => point.Id).ValueGeneratedOnAdd();
         
-        builder.Property(account => account.Latitude).IsRequired();
+        builder.Property(point => point.Latitude).IsRequired();
         
-        builder.Property(account => account.Longitude).IsRequired();
-        builder.Property(account => account.PointType).HasMaxLength(50);
+        builder.Property(point => point.Longitude).IsRequired();
+        builder.Property(point => point.PointType).HasMaxLength(50);
         
-        builder.Property(account => account.DateAdded).IsRequired();
+        builder.Property(point => point.DateAdded).IsRequired();
     }
 }

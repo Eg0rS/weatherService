@@ -6,4 +6,14 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Contracts\Contracts.csproj" />
+      <ProjectReference Include="..\Repository.Abstractions\Repository.Abstractions.csproj" />
+      <ProjectReference Include="..\Service.Abstractions\Service.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster" Version="7.3.0" />
+    </ItemGroup>
+
 </Project>

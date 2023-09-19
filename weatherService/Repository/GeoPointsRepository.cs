@@ -14,14 +14,14 @@ public class GeoPointsRepository : IGeoPointsRepository
         _dbContext = dbContext;
     }
 
-    public async Task<IEnumerable<GeoPoint>> GetAllByOwnerIdAsync(Guid userId)
+    public async Task<IEnumerable<GeoPoint>> GetAllByUserIdAsync(Guid geoPointId)
     {
-        return await _dbContext.GeoPoints.Where(x => x.UserId == userId).ToListAsync();
+        return await _dbContext.GeoPoints.Where(x => x.UserId == geoPointId).ToListAsync();
     }
 
-    public async Task<GeoPoint> GetByIdAsync(Guid userId)
+    public async Task<GeoPoint> GetByIdAsync(Guid geoPointId)
     {
-        return await _dbContext.GeoPoints.FirstOrDefaultAsync(x => x.Id == userId);
+        return await _dbContext.GeoPoints.FirstOrDefaultAsync(x => x.Id == geoPointId);
     }
 
     public void Insert(GeoPoint point)

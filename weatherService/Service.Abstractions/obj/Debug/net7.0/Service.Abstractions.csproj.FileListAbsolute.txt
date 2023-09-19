@@ -1,0 +1,15 @@
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\bin\Debug\net7.0\Service.Abstractions.deps.json
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\bin\Debug\net7.0\Service.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\bin\Debug\net7.0\Service.Abstractions.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\bin\Debug\net7.0\Contracts.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.csproj.AssemblyReference.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.AssemblyInfoInputs.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.AssemblyInfo.cs
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.csproj.CopyComplete
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\refint\Service.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\Service.Abstractions.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Service.Abstractions\obj\Debug\net7.0\ref\Service.Abstractions.dll

@@ -1,7 +1,8 @@
 ﻿namespace Repository.Abstractions;
 
-public class IRepositoryManager
+public interface IRepositoryManager
 {
     IGeoPointsRepository GeoPointsRepository { get; }
     IUserRepository UserRepository { get; }
+    IUnitOfWork UnitOfWork { get; }
 }

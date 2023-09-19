@@ -50,3 +50,9 @@ C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Ap
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Repository.Abstractions.pdb
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Repository.pdb
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Persistence.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Contracts.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Presentation.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Service.Abstractions.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Presentation.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Service.Abstractions.pdb

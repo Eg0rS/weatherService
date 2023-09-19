@@ -11,6 +11,7 @@
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.11",
+          "Presentation": "1.0.0",
           "Repository": "1.0.0",
           "Repository.Abstractions": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -243,6 +244,11 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "runtime": {
           "Domain.dll": {}
@@ -255,6 +261,14 @@
         },
         "runtime": {
           "Persistence.dll": {}
+        }
+      },
+      "Presentation/1.0.0": {
+        "dependencies": {
+          "Service.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Presentation.dll": {}
         }
       },
       "Repository/1.0.0": {
@@ -272,6 +286,14 @@
         },
         "runtime": {
           "Repository.Abstractions.dll": {}
+        }
+      },
+      "Service.Abstractions/1.0.0": {
+        "dependencies": {
+          "Contracts": "1.0.0"
+        },
+        "runtime": {
+          "Service.Abstractions.dll": {}
         }
       }
     }
@@ -492,6 +514,11 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -502,12 +529,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Repository.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
