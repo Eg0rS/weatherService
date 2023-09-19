@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e1453f0-a25a-4ce9-bd48-7ff417657e8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.config/local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.config/prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/handler/ping.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/handler/weather.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/settings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/weatherService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Domain/Entities/GeoPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Domain/Entities/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Persistence/Configurations/GeoPointConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Persistence/Configurations/UserConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Persistence/Context.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository.Abstractions/IGeoPointsRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository.Abstractions/IRepositoryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository.Abstractions/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository/GeoPointsRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository/Repository.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository/RepositoryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../weatherService/Repository/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/.idea/.idea.weatherService/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weatherService/.idea/.idea.weatherService/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../weatherService/weatherService.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/Debug/net7.0/weatherService.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/weatherService.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/weatherService.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/obj/weatherService.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weatherService/weatherService/weatherService.csproj" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.20.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2VacWXjS2mcqm3zqvacz7SVr8mZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/Администратор",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Desktop\pet\weatherService\weatherCalculator\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build weatherCalculator" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="weatherCalculator" />
+      <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="env" value="prod" />
+      </envs>
+      <kind value="PACKAGE" />
+      <package value="weatherCalculator" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build weatherCalculator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
