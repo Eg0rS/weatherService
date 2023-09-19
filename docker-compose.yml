@@ -1,0 +1,62 @@
+version: '3.9'
+services:
+
+  database:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'weather'
+    ports:
+      - 5432:5432
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+  weather-service:
+    hostname: service
+    command: dotnet Api.dll
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    restart: always
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: weatherService/Api/Dockerfile
+    depends_on:
+      - database
+    networks:
+      - backend
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1024M
+        reservations:
+          memory: 2048M
+
+  weather-calculator:
+    hostname: calculator
+    build:
+      context: weatherCalculator
+    environment:
+      "env": "prod"
+    depends_on:
+      - database
+    networks:
+      - backend
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1024M
+        reservations:
+          memory: 2048M
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  pg-data:
