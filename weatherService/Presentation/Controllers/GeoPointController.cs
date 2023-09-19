@@ -35,7 +35,6 @@ public class GeoPointController : ControllerBase
         return Ok(geoPointsDto);
     }
 
-
     [HttpPost]
     public async Task<IActionResult> CreateGeoPoint(Guid userId, [FromBody] GeoPointForCreationDto geoPointForCreationDto)
     {
