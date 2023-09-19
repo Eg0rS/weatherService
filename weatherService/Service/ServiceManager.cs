@@ -14,6 +14,6 @@ public sealed class ServiceManager : IServiceManager
         _lazyGeoPointService = new Lazy<IGeoPointService>(() => new GeoPointService(repositoryManager));
     }
 
-    public IUserService UserService { get; }
-    public IGeoPointService GeoPointService { get; }
+    public IUserService UserService => _lazyUserService.Value;
+    public IGeoPointService GeoPointService => _lazyGeoPointService.Value;
 }

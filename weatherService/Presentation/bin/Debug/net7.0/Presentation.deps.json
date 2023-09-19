@@ -8,12 +8,19 @@
     ".NETCoreApp,Version=v7.0": {
       "Presentation/1.0.0": {
         "dependencies": {
+          "Common": "1.0.0",
           "Service.Abstractions": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "7.0.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "7.0.0.0"
+          "Microsoft.AspNetCore.Mvc.Core": "7.0.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0.0"
         },
         "runtime": {
           "Presentation.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {}
         }
       },
       "Contracts/1.0.0": {
@@ -42,6 +49,14 @@
           "Microsoft.AspNetCore.Mvc.Core.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/7.0.0.0": {
+        "runtime": {
+          "Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -130,14 +145,6 @@
           "Microsoft.AspNetCore.Http.Extensions.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.523.17410"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/7.0.0.0": {
-        "runtime": {
-          "Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -293,6 +300,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -309,6 +321,11 @@
       "sha512": ""
     },
     "Microsoft.AspNetCore.Mvc.Core/7.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -364,11 +381,6 @@
       "sha512": ""
     },
     "Microsoft.AspNetCore.Http.Extensions/7.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Logging.Abstractions/7.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

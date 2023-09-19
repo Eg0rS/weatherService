@@ -56,3 +56,9 @@ C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Ap
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Presentation.pdb
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Contracts.pdb
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Service.Abstractions.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Mapster.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Mapster.Core.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Service.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Service.pdb
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Common.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Api\bin\Debug\net7.0\Common.pdb

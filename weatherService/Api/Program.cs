@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Persistence;
 using Repository;
 using Repository.Abstractions;
+using Service;
+using Service.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//builder.Services.AddScoped<IServiceManager, ServiceManager>();
+builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 

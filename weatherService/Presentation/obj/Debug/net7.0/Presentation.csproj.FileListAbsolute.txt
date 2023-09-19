@@ -47,3 +47,5 @@ C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Pr
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Presentation\obj\Debug\net7.0\refint\Presentation.dll
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Presentation\obj\Debug\net7.0\Presentation.pdb
 C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Presentation\obj\Debug\net7.0\ref\Presentation.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Presentation\bin\Debug\net7.0\Common.dll
+C:\Users\Администратор\Desktop\pet\weatherService\weatherService\Presentation\bin\Debug\net7.0\Common.pdb

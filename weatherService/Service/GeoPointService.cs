@@ -10,7 +10,8 @@ namespace Service;
 public class GeoPointService : IGeoPointService
 {
     private readonly IRepositoryManager _repositoryManager;
-
+    public delegate void GeoPointHandler(GeoPointService sender, GeoPointDto e);
+    public event IGeoPointService.GeoPointHandler? Notify;
     public GeoPointService(IRepositoryManager repositoryManager) => _repositoryManager = repositoryManager;
 
     public async Task<IEnumerable<GeoPointDto>> GetAllByUserIdAsync(Guid userId)
@@ -64,6 +65,8 @@ public class GeoPointService : IGeoPointService
         _repositoryManager.GeoPointsRepository.Insert(geoPoint);
 
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
+        
+        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
 
         return geoPoint.Adapt<GeoPointDto>();
     }
@@ -90,7 +93,9 @@ public class GeoPointService : IGeoPointService
         }
 
         _repositoryManager.GeoPointsRepository.Remove(geoPoint);
-
+        
+        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
+        
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
     }
 
@@ -105,6 +110,9 @@ public class GeoPointService : IGeoPointService
         geoPoint.Latitude = geoPointForUpdateDto.Latitude;
         geoPoint.Longitude = geoPointForUpdateDto.Longitude;
         geoPoint.PointType = geoPointForUpdateDto.PointType;
+        
+        Notify?.Invoke(this, geoPoint.Adapt<GeoPointDto>());
+        
         await _repositoryManager.UnitOfWork.SaveChangesAsync();
     }
 }

@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
       "Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -28,6 +38,11 @@
     }
   },
   "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "path": "../Contracts/Contracts.csproj",
@@ -41,6 +56,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Common >= 1.0.0",
       "Service.Abstractions >= 1.0.0"
     ]
   },
@@ -77,6 +93,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Common\\Common.csproj"
+            },
             "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Service.Abstractions\\Service.Abstractions.csproj": {
               "projectPath": "C:\\Users\\Администратор\\Desktop\\pet\\weatherService\\weatherService\\Service.Abstractions\\Service.Abstractions.csproj"
             }
