@@ -23,7 +23,7 @@ builder.Services.AddDbContext<Context>(builderDb =>
     var connectionString = builder.Configuration.GetConnectionString("Database");
     Console.WriteLine(connectionString);
     builderDb.UseNpgsql(connectionString);
-}, ServiceLifetime.Singleton);
+});
 
 
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
@@ -34,10 +34,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-using (var context = (Context)app.Services.GetService(typeof(Context))!)
-{
-    context.Database.EnsureCreated();
-}
+// using (var context = (Context)app.Services.GetService(typeof(Context))!)
+// {
+//     context.Database.EnsureCreated();
+// }
 
 
 app.UseSwagger();

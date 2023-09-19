@@ -12,12 +12,14 @@ services:
       - 5432:5432
     volumes:
       - pg-data:/var/lib/postgresql/data
+    networks:
+      - backend
 
   weather-service:
     hostname: service
     command: dotnet Api.dll
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_ENVIRONMENT: Production
     restart: always
     ports:
       - "80:80"
